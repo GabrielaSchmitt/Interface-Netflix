@@ -1,0 +1,124 @@
+/* Variáveis */
+:root{
+    --vermelho: #e50914;
+    --preta:    #141414;
+}
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos base*/
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times ;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px; /* mover para a direita*/
+}
+
+header nav a:hover{ /*Quando passar o mouse*/
+    color: #fff;
+}
+
+/*Filme principal*/
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)10%), url('../img/capa_PEAKY-BLINDERS.jpg');
+
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items:     flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top:    10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top:  15%;
+    font-size:   40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botoes .botao{
+    background-color: rgba(0,0,0,.50) ;
+    border:       none;
+    margin-top:   -30px;
+    color:        white;
+
+    padding:      15px 30px;
+    margin-right: 15px;
+    font-size:    12px;
+
+    cursor: pointer;
+    transition: .5s ease all; /* faz o botão ter uma suavidade*/
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 2%;
+}
+
+.filme-principal .container {
+    width: 75%;
+}
+
+.subtitulo {
+    margin-top: 10px;
+    margin-left: 5px;
+    color: #fff;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+/* WRAPPER = "ENVELOPAR" 
+wrapper = container
+Wrapper (pai) = guarda outros elementos, como cards - block, estes cards (filhos) herdam caracteristicas do wrapper(pai).
+ */
+
+ .box-filme {
+     height:  100%;
+     width:   100%;
+     display: block;
+     cursor: pointer;
+ }
+
+ .carrosel-filmes {
+    margin-top: 10px;
+}
